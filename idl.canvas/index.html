@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8" />
+ <title>idlCanvas</title>
+ <link rel="stylesheet" type="text/css" href="css/style.css" />
+ <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script>
+ $(window).on('load', function(){
+  $('.logo').delay(600).fadeIn(700);
+  $('.header-menu ul li').each(function(i) {
+ 	  $(this).delay(800).delay(600 * i).fadeIn(1900);
+   });
+ });
+ </script>
+ </head>
+ <body>
+  <div class="wrapper">
+  <div class="header">
+    <div class="header-contents">
+    <div class="logo">
+          logo
+    </div>
+    <div class="header-menu">
+      <ul>
+        <li>
+          <a href="#">home</a>
+        </li>
+        <li>
+          <a href="#">service</a>
+        </li>
+        <li>
+          <a href="#">profile</a>
+        </li>
+        <li>
+          <a href="#">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
